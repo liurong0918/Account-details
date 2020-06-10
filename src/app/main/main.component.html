@@ -1,0 +1,58 @@
+<div class="main">
+    <div class="header">
+        <div style="height: 50%;width: 100%;"></div>
+        <div>
+            <div style="margin-left: 10px;"> &lt; </div>
+            <div>收支</div>
+            <div class="container">
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="detail-area">
+            <div class="top-area">
+                <div class="flex-start"><label>2019年08月</label>
+                    <div class="d3"></div>
+                </div>
+                <div class="flex-start"><label>全部账户</label>
+                    <div class="d3"></div>
+                </div>
+            </div>
+            <div class="card">
+                <app-card></app-card>
+            </div>
+            <div class="button-area">
+                <div>
+                    <i></i>
+                    <p>收支分析</p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>月度账单</p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>我的账本</p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>查找交易</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="label"><label style="margin-left: 8px;">今天</label>
+            <div style="margin-right: 5px;">刷新</div>
+        </div>
+        <div *ngFor="let item of todayList">
+            <app-item-info></app-item-info>
+        </div>
+        <div class="label"><label style="margin-left: 8px;">昨天</label></div>
+        <div *ngFor="let item of yesterdayList">
+            <app-item-info></app-item-info>
+        </div>
+        <div class="label"><label style="margin-left: 8px;">8月5日</label></div>
+    </div>
+    <div class="note"><label style="margin-left: 22px;">记一笔</label></div>
+</div>
