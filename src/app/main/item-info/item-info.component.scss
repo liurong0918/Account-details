@@ -10,6 +10,8 @@
     .detail {
         height: 25px;
         display: flex;
+        font-size: 10px;
+        color: #9a9da5;
         &>span {
             line-height: 25px;
             @extend .over-flow-hidden;
@@ -32,7 +34,7 @@
             line-height: 10px;
             border: solid 1px orange;
             border-radius: 10px;
-            font-size: 1px;
+            font-size: 10px;
             color: orange;
             margin-right: 10px;
         }

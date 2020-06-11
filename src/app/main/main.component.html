@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="card">
-                <app-card></app-card>
+                <app-card [cardInfo]="cardInfo"></app-card>
             </div>
             <div class="button-area">
                 <div>
@@ -46,11 +46,11 @@
             <div style="margin-right: 5px;">刷新</div>
         </div>
         <div *ngFor="let item of todayList">
-            <app-item-info></app-item-info>
+            <app-item-info [data]="item"></app-item-info>
         </div>
         <div class="label"><label style="margin-left: 8px;">昨天</label></div>
         <div *ngFor="let item of yesterdayList">
-            <app-item-info></app-item-info>
+            <app-item-info [data]="item"></app-item-info>
         </div>
         <div class="label"><label style="margin-left: 8px;">8月5日</label></div>
     </div>

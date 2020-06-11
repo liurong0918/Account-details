@@ -1,16 +1,16 @@
 <div class="card">
     <div class="top-level">
         <span>08/2019</span>
-        <span>余额： {{ money | currency: 'CNY' : 'symbol-narrow' }}</span>
+        <span>余额： {{ cardInfo?.surplus | currency: 'CNY' : 'symbol-narrow' }}</span>
     </div>
     <div class="mid-level">
         <div class="output">
             <div>支出</div>
-            <div>{{ money | currency: 'CNY' : 'symbol-narrow' }}</div>
+            <div>{{ cardInfo.expenses | currency: 'CNY' : 'symbol-narrow' }}</div>
         </div>
         <div class="input">
             <div>收入</div>
-            <div>{{ money | currency: 'CNY' : 'symbol-narrow' }}</div>
+            <div>{{ cardInfo.income | currency: 'CNY' : 'symbol-narrow' }}</div>
         </div>
         <div class="help"></div>
     </div>

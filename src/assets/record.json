@@ -1,0 +1,41 @@
+ {
+     "status": "success",
+     "result": {
+        "today": [
+            {
+                "time": "09:10:10",
+                "expenses": -6.72,
+                "source": "支付宝瑞幸咖啡(北京)有限公司",
+                "card": 4321,
+                "type": "零食烟酒",
+                "isCredit": true
+            },
+            {
+               "time": "13:10:10",
+               "expenses": -100,
+               "source": "北京烤鸭",
+               "card": 4321,
+               "type": "餐饮娱乐",
+               "isCredit": false
+           }
+        ],
+        "yesterday": [
+           {
+               "time": "12:10:10",
+               "expenses": -20.72,
+               "source": "大荣发超市",
+               "card": 4321,
+               "type": "零食烟酒",
+               "isCredit": true
+           },
+           {
+               "time": "24:10:10",
+               "expenses": -999.24,
+               "source": "京东商城",
+               "card": 4321,
+               "type": "娱乐购物",
+               "isCredit": false
+           }
+       ]
+     }
+ }

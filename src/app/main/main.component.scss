@@ -43,7 +43,57 @@
         }
     }
     .button-area {
-        height: 60px;
+      padding-top: 10px;
+      display: flex;
+      height: 60px;
+      justify-content: space-around;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1.2rem;
+        margin-right: 0.8rem;
+        position: relative;
+        p {
+          font-size: 10px;
+          color: #666666;
+          position: absolute;
+          bottom: 0;
+          width: 40px;
+        }
+      }
+      & > div:nth-of-type(1) {
+        i {
+          width: 32px;
+          height: 32px;
+          background: url("../../assets/html.ico") no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      & > div:nth-of-type(2) {
+        i {
+          width: 32px;
+          height: 32px;
+          background: url("../../assets/sass.ico") no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      & > div:nth-of-type(3) {
+          i {
+            width: 32px;
+            height: 32px;
+            background: url("../../assets/xml.ico") no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        & > div:nth-of-type(4) {
+          i {
+            width: 32px;
+            height: 32px;
+            background: url("../../assets/bower.ico") no-repeat;
+            background-size: 100% auto;
+          }
+        }
     }
 }
 
@@ -75,58 +125,7 @@
     margin:  0 auto;
 }
 
-.button-area {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    & > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 1.2rem;
-      margin-right: 0.8rem;
-      position: relative;
-      p {
-        font-size: 0.3rem;
-        color: #666666;
-        position: absolute;
-        bottom: 0;
-        width: 40px;
-      }
-    }
-    & > div:nth-of-type(1) {
-      i {
-        width: 32px;
-        height: 32px;
-        background: url("../../assets/html.ico") no-repeat;
-        background-size: 100% auto;
-      }
-    }
-    & > div:nth-of-type(2) {
-      i {
-        width: 32px;
-        height: 32px;
-        background: url("../../assets/sass.ico") no-repeat;
-        background-size: 100% auto;
-      }
-    }
-    & > div:nth-of-type(3) {
-        i {
-          width: 32px;
-          height: 32px;
-          background: url("../../assets/xml.ico") no-repeat;
-          background-size: 100% auto;
-        }
-      }
-      & > div:nth-of-type(4) {
-        i {
-          width: 32px;
-          height: 32px;
-          background: url("../../assets/bower.ico") no-repeat;
-          background-size: 100% auto;
-        }
-      }
-  }
+
 
 
   .container {

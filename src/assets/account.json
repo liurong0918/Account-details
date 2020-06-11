@@ -1,0 +1,9 @@
+ {
+     "status": "success",
+     "acount": {
+         "income": 1999,
+         "expenses": 2001,
+         "surplus": 10000
+     },
+     "total": 0
+ }
